@@ -21,8 +21,6 @@ def find_node(pre_order_list, post_order_list):
     reduced_pre_order_list = pre_order_list[1:len(reduced_post_order_list)+1]
     left = find_left_node(reduced_pre_order_list)
     right = find_right_node(reduced_post_order_list)
-    # if not any(e in post_order_list[index_root_post:] for e in pre_order_list[1:]):
-
     return root, left, right
 
 
